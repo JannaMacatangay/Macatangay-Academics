@@ -5,121 +5,171 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Oppo Store</title>
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="cute logo.png"/>
+  <link>
     <link rel="stylesheet" href="style-oppo.css">
-</head>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <div class="background">
-        <div class="navbar">
-            <a href="./WEBDEV/index.html"></a>
-            <img src="pictures-oppo/logo.png" alt="Oppo Logo" class="logo">
-            </a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#smartphones-section">Smartphone</a></li>
-                <li><a href="#tablets-section">Tablet</a></li>
-            </ul>
-        </div>
-        <!-- smartphones section -->
-        <div id="smartphones-section">
-            <div class="card-group">
-                <div class="card phone-item">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="https://www.oppo.com/ph/smartphones/series-reno/reno12/" class="btn-phone-title">
-                            <h5 class="card-title">Oppo Reno 12 5G</h5>
-                        </a>
-                        <p class="card-text">AI LinkBoost and BeaconLink, Reno's Best Battery Life Ever</p>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="JannaMacatangay.github.io/index.html">
+                    <img src="pictures-oppo/logo.png" alt="Oppo Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="JannaMacatangay.github.io/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#smartphones-section">Smartphones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tablets-section">Tablets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-5" id="smartphones-section">
+            <h2 class="tablet-header">Smartphones</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 text-center outer-card">
+                        <div class="card-body inner-card">
+                            <img src="pictures-oppo/oppo reno 12 5g.png" class="card-img-top" alt="Oppo Reno 12 5G">
+                            <div class="card-body">
+                                <a href="https://www.oppo.com/ph/smartphones/series-reno/reno12/"
+                                    class="btn-phone-title">
+                                    <h5 class="card-title">Oppo Reno 12 5G</h5>
+                                </a>
+                                <p class="card-text">AI LinkBoost and BeaconLink, Reno's Best Battery Life Ever</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card phone-item">
-                    <img src="pictures-oppo/oppo reno 12 pro 5g.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="https://www.oppo.com/ph/smartphones/series-reno/reno12-pro/" class="btn-phone-title">
-                            <h5 class="card-title">Oppo Reno 12 PRO 5G</h5>
-                        </a>
-                        <p class="card-text">Unprecedented Reno Design, AI Portrait Expert.</p>
+                <div class="col">
+                    <div class="card h-100 text-center outer-card">
+                        <div class="card-body inner-card">
+                            <img src="pictures-oppo/oppo reno 12 pro 5g.png" class="card-img-top" alt="Oppo Reno 12 5G">
+                            <div class="card-body">
+                                <a href="https://www.oppo.com/ph/smartphones/series-reno/reno12-pro//"
+                                    class="btn-phone-title">
+                                    <h5 class="card-title">Oppo Reno 12 PRO 5G</h5>
+                                </a>
+                                <p class="card-text">Unprecedented Reno Design, AI Portrait Expert.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card phone-item">
-                    <img src="pictures-oppo/oppo reno 12 f.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="https://www.oppo.com/ph/smartphones/series-reno/reno12-f-4g/" class="btn-phone-title">
-                            <h5 class="card-title">Oppo Reno 12 F</h5>
-                        </a>
-                        <p class="card-text">AI Portrait | AI LinkBoost</p>
+                <div class="col">
+                    <div class="card h-100 text-center outer-card">
+                        <div class="card-body inner-card">
+                            <img src="pictures-oppo/oppo a3x.png" class="card-img-top" alt="Oppo Reno 12 5G">
+                            <div class="card-body">
+                                <a href="https://www.oppo.com/ph/smartphones/series-reno/reno12-f-4g/"
+                                    class="btn-phone-title">
+                                    <h5 class="card-title">Oppo A3x</h5>
+                                </a>
+                                <p class="card-text">A Step Ahead</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card phone-item">
-                    <img src="pictures-oppo/oppo reno 12 f 5g.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="https://www.oppo.com/ph/smartphones/series-reno/reno12-f-5g/" class="btn-phone-title">
-                            <h5 class="card-title">Oppo Reno 12 F 5G</h5>
-                        </a>
-                        <p class="card-text">AI Portrait | AI LinkBoost</p>
+                <div class="col">
+                    <div class="card h-100 text-center outer-card">
+                        <div class="card-body inner-card">
+                            <img src="pictures-oppo/oppo a3.png" class="card-img-top" alt="Oppo Reno 12 5G">
+                            <div class="card-body">
+                                <a href="https://www.oppo.com/ph/smartphones/series-a/a3/" class="btn-phone-title">
+                                    <h5 class="card-title">Oppo A3</h5>
+                                </a>
+                                <p class="card-text">Military-Grade Shock Resistance, Multiple Liquid Resistance</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card phone-item">
-                    <img src="pictures-oppo/oppo a3x.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="https://www.oppo.com/ph/smartphones/series-a/a3x/" class="btn-phone-title">
-                            <h5 class="card-title">Oppo A3x</h5>
-                        </a>
-                        <p class="card-text">A Step Ahead</p>
+                <div class="col">
+                    <div class="card h-100 text-center outer-card">
+                        <div class="card-body inner-card">
+                            <img src="pictures-oppo/oppo reno 12 f.png" class="card-img-top" alt="Oppo Reno 12 5G">
+                            <div class="card-body">
+                                <a href="https://www.oppo.com/ph/smartphones/series-a/a3/" class="btn-phone-title">
+                                    <h5 class="card-title">Oppo Reno 12 F</h5>
+                                </a>
+                                <p class="card-text">AI Portrait | AI LinkBoost</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card phone-item">
-                    <img src="pictures-oppo/oppo a3.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="https://www.oppo.com/ph/smartphones/series-a/a3/" class="btn-phone-title">
-                            <h5 class="card-title">Oppo A3</h5>
-                        </a>
-                        <p class="card-text">Military-Grade Shock Resistance, Multiple Liquid Resistance</p>
+                <div class="col">
+                    <div class="card h-100 text-center outer-card">
+                        <div class="card-body inner-card">
+                            <img src="pictures-oppo/oppo reno 12 f 5g.png" class="card-img-top" alt="Oppo Reno 12 5G">
+                            <div class="card-body">
+                                <a href="https://www.oppo.com/ph/smartphones/series-reno/reno12-f-5g/"
+                                    class="btn-phone-title">
+                                    <h5 class="card-title">Oppo Reno 12 F 5G</h5>
+                                </a>
+                                <p class="card-text">AI Portrait | AI LinkBoost</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!-- tablets section -->
-        <div id="tablets-section">
-            <div class="tablet-header">
-                <h1>
-                    TABLETS
-                </h1>
-            </div>
-            <div class="tablet-content">
-                <div class="tablet-item">
-                    <img src="pictures-oppo/oppo pad neo.png" alt="Oppo Pad Neo image">
-                    <a href="https://www.oppo.com/ph/accessories/oppo-pad-neo/" class="btn-tablet-title">
-                        <h2 class="tablet-title">Oppo Pad Neo</h2>
-                    </a>
-                    <p class="tablet-text">2.4K ReadFit Screen, Immersive Entertainment</p>
+        <div class="container mt-5" id="tablets-section">
+            <h2 class="tablet-header">Tablets</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card h-100 text-center outer-card">
+                        <div class="card-body inner-card">
+                            <img src="pictures-oppo/oppo pad neo.png" class="card-img-top" alt="Oppo Pad Neo">
+                            <div class="card-body">
+                                <a href="https://www.oppo.com/ph/accessories/oppo-pad-neo/" class="btn-tablet-title">
+                                    <h5 class="card-title">Oppo Pad Neo</h5>
+                                </a>
+                                <p class="card-text">2.4K ReadFit Screen, Immersive Entertainment</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tablet-item">
-                    <img src="pictures-oppo/oppo pad air.png" alt="Oppo Pad Air image">
-                    <a href="https://www.oppo.com/ph/accessories/oppo-pad-air/" class="btn-tablet-title">
-                        <h2 class="tablet-title">Oppo Pad Air</h2>
-                    </a>
-                    <p class="tablet-text">Seriously Light Entertainment</p>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card h-100 text-center outer-card">
+                        <div class="card-body inner-card">
+                            <img src="pictures-oppo/oppo pad air.png" class="card-img-top" alt="Oppo Pad Neo">
+                            <div class="card-body">
+                                <a href="https://www.oppo.com/ph/accessories/oppo-pad-air/" class="btn-tablet-title">
+                                    <h5 class="card-title">Oppo Pad Air</h5>
+                                </a>
+                                <p class="card-text">Seriously Light Entertainment</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-
-    </div>
-    </div>
-    </div>
-
-
     <footer>
         <p>&copy; 2024 Oppo Store. All rights reserved.</p>
     </footer>
-
-    </div>
-
 </body>
 
 </html>
