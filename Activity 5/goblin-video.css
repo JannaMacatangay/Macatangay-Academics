@@ -1,0 +1,79 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.body {
+    background-color: #A3AFBB;
+}
+.navbar-logo {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-image: url('pictures-goblin-video/logo-leaf.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A1ADB9;
+}
+
+.nav-item .nav-link {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-item .nav-link:hover {
+    color: #713642;
+}
+
+.navbar-link ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 30px;
+    position: relative;
+}
+
+.navbar-link ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar-link ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.navbar-link ul li:hover::after {
+    width: 100%;
+}
+
+.navbar-link ul li a:hover {
+    color: black;
+}
