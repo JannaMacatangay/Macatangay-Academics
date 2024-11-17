@@ -1,198 +1,203 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    justify-content: center;
-    align-items: center;
-    height: 100%; 
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  @keyframes scaleUp {
-    0% {
-      transform: scale(0.9);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .fade-in {
-    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
   }
-  
-  .scale-up {
-    animation: scaleUp 1.5s ease-in-out forwards;
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
-  
-  .icon a {
-    animation: fadeIn 2s ease-out forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.scale-up {
+  animation: scaleUp 1.5s ease-in-out forwards;
+}
+
+
+.icon a {
+  display: inline-block;
+  animation: fadeIn 2s ease-out forwards;
+  transition: transform 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
+.icon a:hover {
+  transform: scale(1.2);
+}
+
+
+.img-jannerch {
+  transition: transform 0.3s ease-in-out;
+  animation: scaleUp 2s ease-in-out forwards;
+}
+
+.img-jannerch:hover {
+  transform: scale(1.1);
+}
+
+.logo-project {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.jannerch-pic-about {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  .img-jannerch {
-    transition: transform 0.3s ease-in-out;
-    animation: scaleUp 2s ease-in-out forwards;
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .img-jannerch:hover {
-    transform: scale(1.1);
-  }
-  
-  .logo-project {
-    animation: fadeIn 2s ease-out forwards;
-  }
-  
-  .jannerch-pic-about {
-    animation: fadeIn 2s ease-out forwards;
-  }
-  
-  @keyframes slideIn {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  .slide-in {
-    animation: slideIn 1.5s ease-in-out forwards;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  .btn:hover {
-    transform: scale(1.05);
-    background-color: #F06C6C;
-    color: white;
-  }
-  
-  .nav-item .nav-link:hover {
-    color: #F06C6C;
-    border-bottom: 2px solid #F06C6C;
-    transition: all 0.3s ease;
-  }
-  
-  
-  .btn:hover {
-    transform: scale(1.05);
-    background-color: #F06C6C;
-    color: white;
-  }
-  
-  
+}
+
+.slide-in {
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #F06C6C;
+  color: white;
+}
+
+.nav-item .nav-link:hover {
+  color: #F06C6C;
+  border-bottom: 2px solid #F06C6C;
+  transition: all 0.3s ease;
+}
+
 .card-header {
-    --bs-card-cap-padding-y: 0;
-    --bs-card-cap-padding-x: 0;
-    padding: 0;
+  --bs-card-cap-padding-y: 0;
+  --bs-card-cap-padding-x: 0;
+  padding: 0;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #FFEEF5;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #FFEEF5;
 }
 
 .navbar-brand img {
-    max-height: 70px;
-    margin-left: 30px;
+  max-height: 70px;
+  margin-left: 30px;
 }
+
 .card-title {
-    font-size: 24px;
-    margin: 0;
-    font-weight: 500px;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 500px;
 }
 
 .card-text {
-    color: #F06C6C;
-    margin: 0;
+  color: #F06C6C;
+  margin: 0;
 }
 
 .card-body {
-    background-color: #222222;
-    padding: 10px 0;
+  background-color: #222222;
+  padding: 10px 0;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-item {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    font-size: 18px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  font-size: 18px;
 }
 
 .nav-item .nav-link {
-    color: #FFFFFF;
-    position: relative;
-    text-decoration: none;
-    padding: 5px 10px;
+  color: #FFFFFF;
+  position: relative;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 
 .nav-item .nav-link:hover::after {
-    content: "";
-    text-decoration: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #F06C6C;
-    transition: width 0.3s ease;
+  content: "";
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F06C6C;
+  transition: width 0.3s ease;
 }
 
 .nav-item .nav-link.active {
-    background-color: #F06C6C;
-    color: #FFFFFF;
+  background-color: #F06C6C;
+  color: #FFFFFF;
 }
 
 .nav-item .nav-link:focus,
 .nav-item .nav-link:active {
-    color: #F06C6C; 
-    outline: none; 
-    box-shadow: none; 
+  color: #F06C6C;
+  outline: none;
+  box-shadow: none;
 }
 
 .nav-item .nav-link:hover {
-    color: #F06C6C;
-    border-bottom: 2px solid #F06C6C;
-    transition: all 0.3s ease;
-  }
+  color: #F06C6C;
+  border-bottom: 2px solid #F06C6C;
+  transition: all 0.3s ease;
+}
 
 .firstName {
-    font-weight: bolder;
-    display: inline-block;
-    margin-left: 8px;
-    color: black;
-    font-size: 64px;
+  font-weight: bolder;
+  display: inline-block;
+  margin-left: 8px;
+  color: black;
+  font-size: 64px;
 }
 
 .lastName {
-    display: inline-block;
-    font-size: 64px;
-  }
+  display: inline-block;
+  font-size: 64px;
+}
 
 .intro-section h1 {
-  display: inline; 
-  margin: 0; 
+  display: inline;
+  margin: 0;
 }
 
 .intro-section div {
@@ -203,10 +208,10 @@ body {
 }
 
 .col-md-4 {
-    position: relative;
+  position: relative;
 }
 
 .img-jannerch {
-    max-width: 100%;
-    transition: transform 0.3s ease-in-out;
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
