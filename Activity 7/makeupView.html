@@ -12,21 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
-        /* Body */
         body {
             background-color: #f9f6f7;
             font-family: 'Poppins', sans-serif;
             color: #333;
         }
 
-        /* General Reset */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
-        /* Card Container */
         #cardContainer {
             margin-top: 2rem;
             display: flex;
@@ -34,87 +31,62 @@
             gap: 20px;
         }
 
-        /* Card Styling */
         .card {
             background-color: #f4aabd;
             border: none;
             border-radius: 15px;
-            /* More pronounced rounding */
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            /* Slightly deeper shadow */
             padding: 20px;
             text-align: center;
             position: relative;
             overflow: hidden;
-            /* To hide the overflow of the image */
         }
 
-        /* Image Container */
         #imgContainer {
             background-color: #f4aabd;
             border-radius: 15px;
-            /* More pronounced rounding */
             overflow: hidden;
             padding: 10px;
             position: relative;
         }
 
-        /* Image styling */
         #imgContainer img {
             width: 100%;
             border-radius: 15px;
-            /* More pronounced rounding */
             height: auto;
         }
 
-        /* Makeup Name */
         .makeupname {
             font-weight: 600;
             font-size: 2.5rem;
-            /* Larger font size */
             color: #333;
             margin-top: 2rem;
-            /* Spacing */
         }
 
-        /* Makeup Brand */
         .makeupbrand {
             font-size: 1.5rem;
-            /* Slightly larger font size */
             color: #000;
             font-weight: 500;
         }
 
-        /* Description */
         .description {
             font-size: 1.2rem;
-            /* Adjusted for readability */
             color: black;
-            /* Lighter color for better contrast */
             line-height: 1.5;
-            /* Improved line height for readability */
             text-align: justify;
-            /* Justify content */
         }
 
-        /* Button */
         .btn {
             background-color: #f4aabd;
-            /* Button color matching card */
             color: black;
-            /* Button text color */
             border-radius: 10px;
-            /* Rounded button corners */
             border: none;
-            /* No border */
             transition: background-color 0.3s, transform 0.3s;
         }
 
         .btn:hover {
             background-color: #d18f9b;
-            /* Darker shade on hover */
             transform: scale(1.05);
-            /* Slight scale effect */
         }
     </style>
 
@@ -134,15 +106,14 @@
                     <img id="image_link" src="" alt="Makeup Product Image">
                 </div>
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-center" style="margin-top: 80px;"> <!-- Fixed style attribute -->
-                <div class="card p-4 rounded-5 mb-3 text-center"> <!-- Added text-center class -->
+            <div class="col-md-6 d-flex flex-column align-items-center" style="margin-top: 80px;">
+                <div class="card p-4 rounded-5 mb-3 text-center">
                     <div class="description"><b>Description: </b><br><span id="description"></span></div>
                 </div>
-                <a href="gallery.html" class="btn"><b>Maybelline Products</b></a> <!-- Button below description -->
+                <a href="gallery.html" class="btn"><b>Maybelline Products</b></a>
             </div>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>

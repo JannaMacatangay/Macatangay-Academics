@@ -68,7 +68,7 @@
         <div class="col">
             <h1 style="text-align: center; font-size: 60px;"><b>Influencer's Gallery</b></h1>
         </div>
-        <!-- This is where the JS appends the card components -->
+
         <div class="row" id="cardContainer" style="text-align: justify;">
         </div>
         </div>
@@ -147,20 +147,18 @@
                 "pictures-influencers/pic15.png",
                 "pictures-influencers/pic19.png",]
 
-            // This loop creates and appends cards to the cardContainer element (line 33)
-            // Creates unique ids by using the incrementing i variable
-            // Code has a JS function call to addShadow and removeShadow that gives the unique ids
+           
             for (var i = 0; i < names.length; i++) {
                 var myContainer = document.getElementById("cardContainer");
                 myContainer.innerHTML += "<div class=\"col-xl-3 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"c" + i + "\" onmouseenter=\"addShadow('c" + i + "')\" onmouseleave=\"removeShadow('c" + i + "')\"><img src=\"" + pics[i] + "\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">";
             }
 
-            // Adds a shadow Boostrap class to the element with the given id
+           
             function addShadow(id) {
                 document.getElementById(id).classList.add("shadow");
             }
 
-            // Removes the shadow Boostrap class to the element with the given id
+           
             function removeShadow(id) {
                 document.getElementById(id).classList.remove("shadow");
             }

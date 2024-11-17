@@ -12,19 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        /* General Reset */
         * {
             box-sizing: border-box;
         }
 
-        /* Body */
         body {
             background-color: #f9f6f7;
             font-family: 'Poppins', sans-serif;
             color: #333;
         }
 
-        /* Navbar */
         .navbar {
             background-color: black;
             padding: 1rem;
@@ -40,7 +37,6 @@
             color: #ff4081;
         }
 
-        /* Gallery Heading */
         .display-3 {
             color: #ff4081;
             font-weight: bold;
@@ -48,7 +44,6 @@
             margin-top: 1rem;
         }
 
-        /* Loading Bar */
         .loadingBar {
             background-color: #ff4081;
             height: 5px;
@@ -63,7 +58,6 @@
             z-index: 1000;
         }
 
-        /* Card Container */
         #cardContainer {
             margin-top: 2rem;
             display: flex;
@@ -75,55 +69,39 @@
             background-color: #f4aabd;
             border: none;
             border-radius: 10px;
-            /* Slightly rounded corners */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            /* Adjusted shadow for depth */
             transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-            /* Added background-color transition */
             padding: 30px;
             text-align: center;
             position: relative;
-            /* Needed for overlay effect */
         }
 
-        /* Hover effect for the card */
         .card:hover {
             transform: translateY(-8px);
-            /* Slightly more pronounced lift */
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-            /* Enhanced shadow */
             background-color: #f9f9f9;
-            /* Subtle background change on hover */
         }
 
-        /* Image Container */
         .imgcontainer {
             background-color: #f4aabd;
             border-radius: 10px;
             overflow: hidden;
             padding: 10px;
             position: relative;
-            /* For absolute positioning of overlay */
         }
 
-        /* Image styling */
         .imgcontainer img {
             width: 100%;
             border-radius: 10px;
             transition: transform 0.3s ease, filter 0.3s;
-            /* Added filter transition */
             height: auto;
         }
 
-        /* Image hover effect */
         .imgcontainer img:hover {
             transform: scale(1.1);
-            /* Increased scale for a more dramatic effect */
             filter: brightness(0.9);
-            /* Darken image slightly on hover */
         }
 
-        /* Overlay effect */
         .imgcontainer:after {
             content: '';
             position: absolute;
@@ -132,72 +110,55 @@
             right: 0;
             bottom: 0;
             background: rgba(255, 255, 255, 0.4);
-            /* White overlay */
             opacity: 0;
-            /* Initially hidden */
             transition: opacity 0.3s ease;
-            /* Smooth transition for overlay */
             border-radius: 10px;
-            /* Match the border radius of the image */
         }
 
-        /* Makeup Name */
         .makeupname {
             font-weight: bold;
             font-size: 20px;
             color: #333;
             margin-top: 0.5rem;
             text-decoration: none;
-            /* Remove underline */
         }
 
-        /* Makeup Brand */
         .makeupbrand {
             font-size: 16px;
             color: #000;
             text-decoration: none;
-            /* Remove underline */
         }
 
         .makeupbrand:active,
         .makeupbrand:focus {
             color: #000;
             text-decoration: none;
-            /* Ensure no underline on active or focus */
         }
 
-        /* Product Name */
         .product-name {
             font-weight: bold;
             font-size: 20px;
             color: #000;
             text-decoration: none;
-            /* Remove underline */
         }
 
         .product-name:active,
         .product-name:focus {
             color: #000;
             text-decoration: none;
-            /* Ensure no underline on active or focus */
         }
 
-        /* Brand Name */
         .brand-name {
             color: #000;
             font-size: 14px;
             text-decoration: none;
-            /* Remove underline */
         }
 
         .brand-name:active,
         .brand-name:focus {
             color: #000;
             text-decoration: none;
-            /* Ensure no underline on active or focus */
         }
-
-
 
         .page-item {
             display: inline-block;
@@ -220,7 +181,6 @@
         }
     </style>
 </head>
-</head>
 
 <body id="body" data-bs-theme="light">
     <nav class="navbar navbar-expand-lg shadow">
@@ -237,9 +197,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="makeup.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -248,17 +205,14 @@
     <div class="container">
         <div id="loadingBar"></div>
 
-        <!-- Maybelline Products Header at the Top -->
         <div class="row mt-5">
             <div class="col">
                 <h1 class="display-3">Maybelline Products</h1>
             </div>
         </div>
 
-        <!-- Card Container for Products -->
         <div id="cardContainer" class="row justify-content-center"></div>
 
-        <!-- Pagination at the Bottom -->
         <div class="row my-6">
             <div class="col">
                 <nav aria-label="Page navigation example">
@@ -275,8 +229,6 @@
         </div>
     </div>
 </body>
-
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
@@ -307,10 +259,6 @@
                 '</a>' +
                 '</div>' +
                 '</div>';
-
-
-
-
 
             loadingBar.style.width = ((i - baseline + 2) / 20) * 100 + '%';
         }
