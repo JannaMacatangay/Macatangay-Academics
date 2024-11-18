@@ -1,0 +1,104 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+/*!This style is important, do not override!*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h5 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+h1 {
+    color: #FFAE00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    max-width: 540px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:nth-child(odd) {
+    background-color: #FFAE00;
+    align-self: flex-start;
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(even) {
+    background-color: #FFAE00;
+    align-self: flex-end;
+    animation-delay: 0.4s;
+}
+
+.card img {
+    width: 180px;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.card-body {
+    background-color: #FFAE00;
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    color: #3E2723;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    text-align: justify;
+    color: #333;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}

@@ -127,100 +127,147 @@
     }
 
     @media (max-width: 931px) {
-    .text-black,
-    .text-pink {
-        font-size: 2.3rem;
+
+        .text-black,
+        .text-pink {
+            font-size: 2.4rem;
+        }
+
+        .img-silhouette {
+            max-height: 87%;
+        }
+
+        .silhouette-container {
+            height: 100vh;
+        }
+
+        .navbar-brand img {
+            max-width: 100px;
+        }
     }
 
-    .img-silhouette {
-        max-height: 90%;
+    @media (max-width: 700px) {
+
+        .text-black,
+        .text-pink {
+            font-size: 2.4rem;
+        }
+
+        .img-silhouette {
+            max-height: 87%;
+        }
+
+        .silhouette-container {
+            height: 100vh;
+        }
+
+        .navbar-brand img {
+            max-width: 100px;
+        }
     }
 
-    .silhouette-container {
-        height: 100vh;
+    @media (max-width: 768px) {
+
+        .text-black,
+        .text-pink {
+            font-size: 2rem;
+        }
+
+        .img-silhouette {
+            max-height: 90%;
+        }
+
+        .silhouette-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            max-width: 100px;
+        }
     }
 
-    .navbar-brand img {
-        max-width: 100px;
-    }
-}
+    @media (max-width: 682px) {
 
-@media (max-width: 768px) {
-    .text-black,
-    .text-pink {
-        font-size: 2.3rem;
-    }
+        .text-black,
+        .text-pink {
+            font-size: 2rem;
+        }
 
-    .img-silhouette {
-        max-height: 90%;
-    }
+        .img-silhouette {
+            max-height: 90%;
+        }
 
-    .silhouette-container {
-        height: 100vh;
-    }
+        .silhouette-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .navbar-brand img {
-        max-width: 100px;
-    }
-}
-
-@media (max-width: 682px) {
-    .text-black,
-    .text-pink {
-        font-size: 2.5rem;
+        .navbar-brand img {
+            max-width: 100px;
+        }
     }
 
-    .img-silhouette {
-        max-height: 90%;
+    @media (max-width: 576px) {
+
+        .text-black,
+        .text-pink {
+            font-size: 1.6rem;
+        }
+
+        .img-silhouette {
+            max-height: 90%;
+        }
+
+        .silhouette-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            max-width: 80px;
+        }
+
+        .text-container {
+            padding: 20px;
+        }
     }
 
-    .silhouette-container {
-        height: 100vh;
-    }
+    @media (max-width: 360px) {
 
-    .navbar-brand img {
-        max-width: 100px;
-    }
-}
+        .text-black,
+        .text-pink {
+            font-size: 1.5rem;
+        }
 
-@media (max-width: 576px) {
-    .text-black,
-    .text-pink {
-        font-size: 1.6rem;
-    }
+        .img-silhouette {
+            max-height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
 
-    .img-silhouette {
-        max-height: 90%;
-    }
+        .silhouette-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .silhouette-container {
-        height: 100vh;
-    }
+        .navbar-brand img {
+            max-width: 80px;
+        }
 
-    .navbar-brand img {
-        max-width: 100px;
+        .text-container {
+            padding: 10px;
+            text-align: center;
+        }
     }
-}
-
-@media (max-width: 360px) {
-    .text-black,
-    .text-pink {
-        font-size: 1.5rem;
-    }
-
-    .img-silhouette {
-        max-height: 90%;
-    }
-
-    .silhouette-container {
-        height: 100vh;
-    }
-
-    .navbar-brand img {
-        max-width: 100px;
-    }
-}
-
 </style>
 
 <body>
@@ -245,10 +292,10 @@
                         <img src="assets-404/silhouette-jannerch.png" alt="Janna-silhouette"
                             class="img-silhouette position-absolute" onclick="playAudio()" style="z-index: 1;">
                         <div class="text-container d-flex flex-column align-items-center" style="z-index: 2;">
-                                <h1 class="text-black" onclick="playAudio()" style="color: #252121">404 NOT FOUND</h1>
-                                <h1 class="text-pink" onclick="playAudio()" style="color: #C65859">404 NOT FOUND</h1>
-                                <h1 class="text-black" onclick="playAudio()" style="color: #252121">404 NOT FOUND</h1>
-                                <h1 class="text-pink" onclick="playAudio()" style="color: #C65859">404 NOT FOUND</h1>
+                            <h1 class="text-black" onclick="playAudio()" style="color: #252121">404 NOT FOUND</h1>
+                            <h1 class="text-pink" onclick="playAudio()" style="color: #C65859">404 NOT FOUND</h1>
+                            <h1 class="text-black" onclick="playAudio()" style="color: #252121">404 NOT FOUND</h1>
+                            <h1 class="text-pink" onclick="playAudio()" style="color: #C65859">404 NOT FOUND</h1>
                             </button>
                         </div>
                     </div>
