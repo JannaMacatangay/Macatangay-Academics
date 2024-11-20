@@ -58,7 +58,7 @@ h1 {
 }
 
 .card:nth-child(odd) {
-    background-color: #FFAE00;
+    background-color: #fbac03;
     align-self: flex-start;
     animation-delay: 0.2s;
 }
