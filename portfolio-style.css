@@ -264,14 +264,14 @@ footer .nav img {
   .intro-section {
     justify-content: center;
     align-items: flex-start;
-    padding: 0 10px;
-    margin-left: 10%;
+    padding: 0 7px;
+    margin-left: 7%;
   }
 
   .icon {
     justify-content: center;
     align-items: flex-start;
-    padding: 0 10px;
-    margin-left: 10%;
+    padding: 0 5px;
+    margin-left: 5%;
   }
 }
