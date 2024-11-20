@@ -1,9 +1,21 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
 }
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .body {
     background-color: #A3AFBB;
 }
+
 .navbar-logo {
     display: inline-block;
     width: 150px;
@@ -79,9 +91,9 @@
 }
 
 .card {
-    background-color: #A3AFBB; 
-    border: 1px solid #A3AFBB; 
-    border-radius: 1rem; 
+    background-color: #A3AFBB;
+    border: 1px solid #A3AFBB;
+    border-radius: 1rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -93,14 +105,14 @@
     position: relative;
     display: flex;
     height: 100vh;
-    
+
 }
 
 .h1 {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 50px;  
+    justify-content: center;
+    align-items: center;
+    height: 50px;
     margin-bottom: 350px;
 }
 
@@ -113,12 +125,12 @@
     font-weight: 600;
     margin-left: 8px;
     color: black;
-    font-size:60px;
+    font-size: 60px;
 }
 
 .filmingLocations {
     font-size: 60px;
-  }
+}
 
 .img-jannerch {
     max-width: 100%;
