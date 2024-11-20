@@ -243,18 +243,6 @@ html {
   transition: transform 0.3s ease-in-out;
 }
 
-footer {
-  background-color: #f8f9fa;
-}
-
-footer .nav li {
-  margin-left: 1rem;
-}
-
-footer .nav img {
-  width: 24px;
-  height: 24px;
-}
 
 @media (max-width: 767px) {
   .col-md-6 {
@@ -264,14 +252,42 @@ footer .nav img {
   .intro-section {
     justify-content: center;
     align-items: flex-start;
-    padding: 0 7px;
-    margin-left: 7%;
+    padding: 0 5px;
+    margin-left: 5px;
   }
 
   .icon {
     justify-content: center;
     align-items: flex-start;
-    padding: 0 5px;
-    margin-left: 5%;
+    padding: 0 3px;
+    margin-left: 3%;
+  }
+}
+@media (max-width: 768px) {
+  #about-section .row {
+    flex-direction: column;
+  }
+
+  #about-section .col-md-4,
+  #about-section .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about {
+    font-size: 48px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .intro {
+    font-size: 16px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .jannerch-pic-about {
+    max-width: 80%;
+    margin-bottom: 20px;
   }
 }
