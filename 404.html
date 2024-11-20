@@ -146,6 +146,7 @@
         }
     }
 
+    /* 
     @media (max-width: 700px) {
 
         .text-black,
@@ -164,32 +165,9 @@
         .navbar-brand img {
             max-width: 100px;
         }
-    }
+    } */
 
-    @media (max-width: 768px) {
-
-        .text-black,
-        .text-pink {
-            font-size: 2rem;
-        }
-
-        .img-silhouette {
-            max-height: 90%;
-        }
-
-        .silhouette-container {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .navbar-brand img {
-            max-width: 100px;
-        }
-    }
-
-    @media (max-width: 682px) {
+    @media (max-width: 780px) {
 
         .text-black,
         .text-pink {
@@ -212,7 +190,30 @@
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 690px) {
+
+        .text-black,
+        .text-pink {
+            font-size: 2rem;
+        }
+
+        .img-silhouette {
+            max-height: 90%;
+        }
+
+        .silhouette-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            max-width: 100px;
+        }
+    }
+
+    @media (max-width: 580px) {
 
         .text-black,
         .text-pink {
@@ -268,6 +269,36 @@
             text-align: center;
         }
     }
+
+    @media (max-width: 280px) {
+
+        .text-black,
+        .text-pink {
+            font-size: 1.5rem;
+        }
+
+        .img-silhouette {
+            max-height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .silhouette-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            max-width: 80px;
+        }
+
+        .text-container {
+            padding: 10px;
+            text-align: center;
+        }
+    }
 </style>
 
 <body>
@@ -277,7 +308,7 @@
 
 
     <div class="row align-items-left justify-content-left">
-        <div class="col-12 col-md-auto d-flex justify-content-left">
+        <div class="col-12 col-md-auto d-flex justify-content-left p-0">
             <a class="navbar-brand fadeIn" href="index.html">
                 <img src="pictures-potfolio/cute logo.png" alt="Logo" class="img-fluid">
             </a>
@@ -285,7 +316,7 @@
 
         <div class="row justify-content-center">
             <div
-                class="col-md-6 d-flex flex-column align-items-center justify-content-center intro-section fade-in position-relative">
+                class="col-md-6 d-flex flex-column align-items-center justify-content-center intro-section fade-in position-relative p-0">
                 <div class="card card-custom">
                     <div
                         class="silhouette-container d-flex justify-content-center align-items-center position-relative">
