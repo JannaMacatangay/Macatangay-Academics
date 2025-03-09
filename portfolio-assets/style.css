@@ -285,7 +285,15 @@ html {
   }
 
   .jannerch-pic-about {
-    max-width: 60%;
-    margin-bottom: 20px;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  #about-section .col-md-4 {
+    order: 2;
+  }
+
+  #about-section .col-md-8 {
+    order: 1;
   }
 }

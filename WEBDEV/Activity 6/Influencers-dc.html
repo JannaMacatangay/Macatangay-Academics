@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Carry Shop</title>
+    <link rel="icon" type="image/x-icon" href="pictures-dc/dc-icon.png" />
+    <link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            background-color: #D8BFAF;
+            position: relative;
+            padding-right: 70px;
+        }
+
+        .navbar-brand {
+            position: relative;
+            padding-left: 50px;
+        }
+    </style>
+
+    <body data-bs-theme="light" id="body">
+        <nav class="navbar navbar-expand-lg shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="pictures-dc/dc-logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="dc.html">Home</a>
+                        </li>
+                        <li class="nav-item"></li>
+                        <a class="nav-link" href="products-dc.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Influencers-dc.html">Influencer's Gallery</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outlined-dark" id="btnColor" onclick="changeColorMode()" type="submit">Dark
+                        Mode</button>
+                </div>
+            </div>
+            </div>
+        </nav>
+        </div>
+        <div class="col">
+            <h1 style="text-align: center; font-size: 60px;"><b>Influencer's Gallery</b></h1>
+        </div>
+
+        <div class="row" id="cardContainer" style="text-align: justify;">
+        </div>
+        </div>
+
+        <div class="container-fluid" id="footer" style="width:100%; display: none;"></div>
+        <div class="row">
+            <div class="col p-5">
+                <h1 class="display-2 text-center" style="background-color: #D8BFAF">
+                    <img src="pictures-dc/dc-logo.png">
+                    <button type="button" onclick="expandContent()" class="btn btn-outline-secondary"
+                        id="btnExpand">Expand</button>
+                </h1>
+
+                <div class="container-fluid" id="footer1" style="display: none;">
+                    <div class="row">
+                        <div class="col text-center pb-10" style="background-color: #D8BFAF;">
+                            <footer class="py-1 my-2">
+                                <ul class="nav justify-content-center pb-20">
+                                    <li class="nav-item"><a href="https://dailycarryph.com/pages/faqs"
+                                            class="nav-link px-2 text-muted">FAQs</a></li>
+                                    <li class="nav-item"><a href="https://dailycarryph.com/pages/return-exchange"
+                                            class="nav-link px-2 text-muted">Customer Care</a></li>
+                                    <li class="nav-item"><a href="https://dailycarryph.com/pages/contact-us"
+                                            class="nav-link px-2 text-muted">Contact Us</a></li>
+                                    <li class="nav-item"><a href="https://dailycarryph.com/pages/shopee"
+                                            class="nav-link px-2 text-muted">Shoppee</a></li>
+                                    <li class="nav-item"><a
+                                            href="https://www.lazada.com.ph/shop/daily-carry/?path=index.htm&fbclid=IwAR25-PIzSNg9126oGpN7Wk2t1sEuWeDlOTLFwBYRwLS-DAB4EYr4ezAC0Zk"
+                                            class="nav-link px-2 text-muted">Lazada</a></li>
+                                </ul>
+                                <p class="text-center text-muted pb-10">© 2021 Company, Inc</p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+            </script>
+
+        <script>
+            var names = [
+                "@iammedri",
+                "@ivymamon_",
+                "@illmare__",
+                "@donny.alegre",
+                "@ivymamon_",
+                "@ira.grace",
+                "@dovesgonzales",
+                "@tonediscoveries",
+                "@shaiymb",
+                "@deniselaguardia",
+                "@sashim.ich",
+                "@madyguevara_",
+                "@moodymadie",
+                "@madyguevara_",
+                "@fraaaanz_20",
+                "@gemanonuevo"]
+            var pics = [
+                "pictures-influencers/pic1.png",
+                "pictures-influencers/pic2.png",
+                "pictures-influencers/pic17.png",
+                "pictures-influencers/pic4.png",
+                "pictures-influencers/pic18.png",
+                "pictures-influencers/pic6.png",
+                "pictures-influencers/pic7.png",
+                "pictures-influencers/pic8.png",
+                "pictures-influencers/pic9.png",
+                "pictures-influencers/pic10.png",
+                "pictures-influencers/pic11.png",
+                "pictures-influencers/pic12.png",
+                "pictures-influencers/pic13.png",
+                "pictures-influencers/pic14.png",
+                "pictures-influencers/pic15.png",
+                "pictures-influencers/pic19.png",]
+
+
+            for (var i = 0; i < names.length; i++) {
+                var myContainer = document.getElementById("cardContainer");
+                myContainer.innerHTML += "<div class=\"col-xl-3 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"c" + i + "\" onmouseenter=\"addShadow('c" + i + "')\" onmouseleave=\"removeShadow('c" + i + "')\"><img src=\"" + pics[i] + "\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">" + names[i] + "</h5><p class=\"card-text\">";
+            }
+
+
+            function addShadow(id) {
+                document.getElementById(id).classList.add("shadow");
+            }
+
+
+            function removeShadow(id) {
+                document.getElementById(id).classList.remove("shadow");
+            }
+
+            var display = none;
+            function expandContent() {
+                var footer = document.getElementById("footer1");
+                var btnExpand = document.getElementById("btnExpand");
+
+                if (display == "none") {
+                    footer.style.display = "block";
+                    display = "block";
+                    btnExpand.innerHTML = "Collapse";
+                } else {
+                    footer.style.display = "none";
+                    display = "none";
+                    btnExpand.innerHTML = "Expand";
+                }
+            }
+
+            var colorMode = "light";
+            function changeColorMode() {
+                if (colorMode == "light") {
+                    document.getElementById("body").setAttribute("data-bs-theme", "dark");
+                    document.getElementById("btnColor").innerHTML = "Light Mode";
+                    colorMode = "dark";
+                } else {
+                    document.getElementById("body").setAttribute("data-bs-theme", "light");
+                    document.getElementById("btnColor").innerHTML = "Dark Mode";
+                    colorMode = "light";
+                }
+            }
+        </script>
+    </body>
+
+</html>
