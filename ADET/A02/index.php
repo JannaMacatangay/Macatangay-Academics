@@ -112,30 +112,31 @@ if (isset($_GET['page'])) {
   </div>
 </nav>
 
+<div class="container-fluid mt-1 pt-3">
+  <div class="row gx-3 gy-3">
+    <div class="col-12 col-md-4 col-lg-3 d-flex flex-column">
+      <div class="card sidebar-card shadow p-4">
+        <h4 class="mb-3">Menu</h4>
+        <a href="?page=fits" class="btn btn-lg w-100 mb-2">My Fits</a>
+        <a href="?page=wardrobe" class="btn btn-lg w-100">Wardrobe</a>
+      </div>
 
-  <div class="container-fluid mt-3">
-  <div class="row gx-3">
-  <div class="col-12 col-md-4 col-lg-3 mt-5 pt-3">
-    <div class="card sidebar-card shadow p-4 mt-5">
-      <h4 class="mb-3">Menu</h4>
-      <a href="?page=fits" class="btn w-100 mb-2">My Fits</a>
-      <a href="?page=wardrobe" class="btn w-100">Wardrobe</a>
-    </div>
-
-      <div class="card sidebar-card shadow p-4 mt-4">
+      <!-- Smaller Follow Me Card -->
+      <div class="card sidebar-card shadow p-3 mt-1">
         <h4 class="mb-3">Follow Me</h4>
         <?php include("shared/info.php"); ?>
       </div>
-     </div>
+    </div>
 
-
-      <div class="col-12 col-md-8 col-lg-9">
-        <div class="card content-card shadow p-4">
-          <?php include("shared/" . $page . ".php"); ?>
-        </div>
+    <div class="col-12 col-md-8 col-lg-9 mt-3 mt-md-0">
+      <div class="card content-card shadow p-4 mt-3">
+        <?php include("shared/" . $page . ".php"); ?>
       </div>
     </div>
   </div>
+</div>
+
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
