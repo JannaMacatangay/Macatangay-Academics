@@ -122,11 +122,11 @@ if (isset($_GET['page'])) {
       <a href="?page=wardrobe" class="btn w-100">Wardrobe</a>
     </div>
 
-    <div class="card sidebar-card shadow p-4 mt-4">
-      <h4 class="mb-3">Follow Me</h4>
-      <?php include("shared/info.php"); ?>
-    </div>
-  </div>
+      <div class="card sidebar-card shadow p-4 mt-4">
+        <h4 class="mb-3">Follow Me</h4>
+        <?php include("shared/info.php"); ?>
+      </div>
+     </div>
 
 
       <div class="col-12 col-md-8 col-lg-9">
