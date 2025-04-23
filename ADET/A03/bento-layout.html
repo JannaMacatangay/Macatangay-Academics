@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GRWM Cosmetics | Bento layout design</title>
+    <link rel="icon" type="image/x-icon" href="grwm/g-logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .card-body {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .container-fluid {
+        overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+        .container-fluid {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .container-fluid::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container-fluid {
+            -ms-overflow-style: none;  
+            scrollbar-width: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- column 1 -->
+            <div class="col-12 col-md-9 gx-2">
+                <!-- row 1 -->
+                <div class="row gx-2 gy-1">
+                    <!-- row 1 column 1 -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card p-0 my-1"
+                            style="height: 250px; width: 100%; border-radius: 50px; border: none;">
+                            <img src="grwm/powder-pink.png" class="card-img-top" alt="Image 1"
+                                style="height: 100%; width: 100%; object-fit: cover; border-radius: 50px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 30px;">ALL ABOUT THAT BASE</h5>
+                                <a href="grwm-products.html" style=" color: inherit;">
+                                    <h5 class="card-text" style="font-size: 15px;">View Products</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row 1 column 2 -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card p-0 my-1"
+                            style="height:250px; width: 100%; border-radius: 50px; border: none;">
+                            <img src="grwm/armSwatch.png" class="card-img-top" alt="Image 2"
+                                style="height: 100%; width: 100%; object-fit: cover; border-radius: 50px;">
+                        </div>
+                    </div>
+                    <!-- row 1 column 3 -->
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card p-0 my-1"
+                            style="height: 250px; width: 100%; border-radius: 50px; border: none;">
+                            <img src="grwm/powder-packaging.png" class="card-img-top" alt="Image 3"
+                                style="height: 100%; width: 100%; object-fit: cover; border-radius: 50px;">
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class="row gx-2 gy-1">
+                    <!-- row 2 column 1 -->
+                    <div class="col-12 col-sm-6 col-md-5">
+                        <div class="card p-0 my-1"
+                            style="height: 250px; width: 100%; border-radius: 50px; border: none;">
+                            <img src="grwm/coffee.png" class="card-img-top" alt="Image 4"
+                                style="height: 100%; width: 100%; object-fit: cover; border-radius: 50px;">
+                        </div>
+                    </div>
+                    <!-- row 2 column 2 -->
+                    <div class="col-12 col-sm-6 col-md-7 d-flex justify-content-center align-items-center">
+                        <div class="card p-0 my-1" style="height: 250px; width: 100%; border: none;">
+                            <a href="index.html" class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                                <img src="grwm/GRWM_Logo.png" class="card-img-top" alt="Image 5"
+                                    style="max-height: 100%; max-width: 100%; object-fit: contain; border: none; border-radius: 50px;">
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <!-- row 3 -->
+                <div class="row gx-2 gy-1">
+                    <!-- row 3 column 1 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card p-0 my-1"
+                            style="height: 180px; width: 100%; border-radius: 50px; border: none; background-color: #ECE8DC;">
+                            <video width="100%" height="100%" autoplay muted loop style="border-radius: 50px;">
+                                <source src="grwm/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- row 3 column 2 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card p-0 my-1"
+                            style="height: 180px; width: 100%; border-radius: 50px; border: none;">
+                            <img src="grwm/bg-powder brown.png" class="card-img-top" alt="Image 7"
+                                style="height: 100%; width: 100%; object-fit: cover; border-radius: 50px;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 30px;">Beauty on your own terms.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- column 2 -->
+            <div class="col-12 col-md-3 gx-2">
+                <!-- column 2 row 1 -->
+                <div class="row gy-1">
+                    <div class="col">
+                        <div class="card p-0 my-1"
+                            style="height: 350px; width: 100%; border-radius: 50px; border: none;">
+                            <img src="grwm/heart.png" class="card-img-top" alt="Image 8"
+                                style="height: 100%; width: 100%; object-fit: cover; border-radius: 50px;">
+                        </div>
+                    </div>
+                </div>
+                <!-- column 2 row 2 -->
+                <div class="row gy-1">
+                    <div class="col">
+                        <div class="card p-0 my-1"
+                            style="height: 350px; width: 100%; border-radius: 50px; border: none;">
+                            <img src="grwm/skin-tone.png" class="card-img-top" alt="Image 9"
+                                style="height: 100%; width: 100%; object-fit: cover; border-radius: 50px; background-color: #EEEADE;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
