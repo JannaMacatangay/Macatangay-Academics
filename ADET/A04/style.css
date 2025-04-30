@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcf6f4;
+}
+
+.navbar {
+    background-color: #FFF1ED;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #7c217c;
+}
+
+.navbar-brand:hover {
+    color: #561456;
+}
+
+.nav-link {
+    color: #7c217c;
+}
+
+.nav-link:hover {
+    color: #561456;
+}
+
+.custom-button {
+    width: 100px;
+}
+
+.custom-button.content {
+    width: 200px;
+}
+
+.custom-button:hover {
+    background-color: #EEAFEC;
+    cursor: pointer;
+}
+
+.topcontainer {
+    height: 13dvh;
+    font-weight: 500;
+    background: #FFF1ED;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;
+    border-radius: 20px;
+}
+
+.categories {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+.category-card {
+    background-color: #fff;
+    border: 2px solid #e4d4ea;
+    border-radius: 20px;
+    padding: 18px 28px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+    color: #FCE4ED;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    white-space: nowrap;
+}
+
+.category-card:hover {
+    background-color: #FCE4ED;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.category-card:active {
+    background-color: #FCE4ED;
+}
+
+
+.maincontainer {
+    height: 75dvh;
+}
+
+.product-card {
+    padding: 0.5rem;
+    min-height: 150px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    max-height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.1);
+}
+
+.product-name {
+    display: block;
+}
+
+.card {
+    overflow-y: auto;
+    border: none;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.card::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #f495b8;
+    color: black;
+}
