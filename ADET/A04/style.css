@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fcf6f4;
+    overflow: hidden;
 }
 
 .navbar {
@@ -133,4 +134,27 @@ body {
 .btn {
     background-color: #f495b8;
     color: black;
+}
+
+#receipt {
+    max-height: 300px; 
+    overflow-y: auto;
+    padding-right: 5px; 
+}
+
+#receipt::-webkit-scrollbar {
+    width: 6px;
+}
+
+#receipt::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+#receipt::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+#receipt::-webkit-scrollbar-thumb:hover {
+    background-color: #BB4D8A;
 }
