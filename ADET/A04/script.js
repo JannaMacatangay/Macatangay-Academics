@@ -905,14 +905,14 @@ function loadCategories() {
 
     products.forEach((product, index) => {
         categoriesContainer.innerHTML += `
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-            <div onclick="loadProducts('` + index + `')" class="card mx-1 custom-button p-2 text-center">
-              <small><b>` + product.category + `</b></small>
-            </div>
-          </div>
-        `;
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div onclick="loadProducts('` + index + `')" class="card mx-1 custom-button p-3 text-center">
+          <small><b>` + product.category + `</b></small>
+        </div>
+      </div>
+    `;
     });
-    
+
 }
 
 function loadProducts(categoryIndex) {
@@ -968,7 +968,7 @@ function addToReceipt(price, code) {
 
     var totalValueElement = document.getElementById("totalValue");
     if (totalValueElement) {
-        totalValueElement.innerHTML = total.toFixed(2); 
+        totalValueElement.innerHTML = total.toFixed(2);
     }
 
     receiptContainer.innerHTML += `
@@ -982,7 +982,7 @@ function addToReceipt(price, code) {
 window.onload = function () {
     const totalValueElement = document.getElementById('totalValue');
     if (totalValueElement) {
-        totalValueElement.textContent = total.toFixed(2); 
+        totalValueElement.textContent = total.toFixed(2);
     }
 };
 
