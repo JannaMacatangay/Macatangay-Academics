@@ -23,9 +23,9 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col d-flex justify-content-between align-items-start p-5">
+            <div class="col d-flex justify-content-between align-items-start p-4 m-3 mb-0">
                 <div class="d-flex flex-row align-items-center">
-                    <div class="h4 mb-0">To-do</div>
+                    <div class="h3 mb-0">To-do</div>
 
                     <div class="dropdown mx-5">
                         <button class="btn-status dropdown-toggle rounded-3 px-3 mt-1" type="button" id="statusDropdown"
@@ -59,35 +59,23 @@
                     </div>
 
                     <div class="modal-body">
-                        <!-- Title -->
                         <div class="mb-3">
                             <label for="todoTitle" class="form-label fw-semibold">Title</label>
                             <input type="text" class="form-control" id="todoTitle" placeholder="Enter task title"
                                 required>
                         </div>
 
-                        <!-- Subject -->
                         <div class="mb-3">
                             <label for="todoSubject" class="form-label fw-semibold">Subject</label>
-                            <!-- Example as a dropdown, change options as needed -->
                             <select class="form-select" id="todoSubject" required>
                                 <option value="" disabled selected>Select subject</option>
                                 <option value="ADET">ADET</option>
-                                <option value="Math">Math</option>
-                                <option value="Science">Science</option>
-                                <option value="English">English</option>
-                                <!-- Add more subjects as needed -->
+                                <option value="Math">WEBDEV</option>
+                                <option value="Science">CAPSTONE</option>
+                                <option value="English">POM</option>
                             </select>
                         </div>
 
-                        <!-- Description -->
-                        <div class="mb-3">
-                            <label for="todoDescription" class="form-label fw-semibold">Description</label>
-                            <textarea class="form-control" id="todoDescription" rows="3"
-                                placeholder="Add more details (optional)"></textarea>
-                        </div>
-
-                        <!-- Status -->
                         <div class="mb-3">
                             <label for="todoStatus" class="form-label fw-semibold">Status</label>
                             <select class="form-select" id="todoStatus" required>
@@ -98,7 +86,6 @@
                             </select>
                         </div>
 
-                        <!-- Due Date & Time -->
                         <div class="mb-3">
                             <label for="todoDueDate" class="form-label fw-semibold">Due Date & Time</label>
                             <input type="datetime-local" class="form-control" id="todoDueDate" required>
