@@ -21,15 +21,15 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     padding: 0;
-}
+  }
 
-html,
-body {
+  html,
+  body {
     width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-}
+  }
 
   body {
     font-family: 'Poppins', sans-serif;
@@ -65,7 +65,7 @@ body {
 <body data-bs-theme="light" id="body">
   <nav class="navbar navbar-expand-lg shadow">
     <div class="container-fluid">
-      <a class="navbar-brand" href="dc.html">
+      <a class="navbar-brand" href="../">
         <img src="pictures-dc/dc-logo.png">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -90,6 +90,7 @@ body {
     </div>
     </div>
   </nav>
+
   <div class="container">
     <div class="row mt-5">
       <div class="col">
@@ -127,6 +128,7 @@ body {
       </div>
     </div>
   </div>
+
   <div class="container">
     <div class="row mt-5">
       <div class="col">
@@ -166,37 +168,40 @@ body {
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="container-fluid" id="footer" style="width:100%; display: none;"></div>
-        <div class="row">
-          <div class="col p-5">
-            <h1 class="display-2 text-center" style="background-color: #D8BFAF">
-              <img src="pictures-dc/dc-logo.png">
-              <button type="button" onclick="expandContent()" class="btn btn-outline-secondary"
-                id="btnExpand">Expand</button>
-            </h1>
+  <div class="container-fluid p-0 mt-5" style="background-color: #D8BFAF;">
+    <div class="row">
+      <div class="col p-5 text-center">
+        <h1 class="display-2">
+          <img src="pictures-dc/dc-logo.png" alt="DC Logo">
+          <button type="button" onclick="expandContent()" class="btn btn-outline-secondary" id="btnExpand">
+            Expand
+          </button>
+        </h1>
+      </div>
+    </div>
 
-            <div class="container-fluid" id="footer1" style="display: none;">
-              <div class="row">
-                <div class="col text-center pb-10" style="background-color: #D8BFAF;">
-                  <footer class="py-1 my-2">
-                    <ul class="nav justify-content-center pb-20">
-                      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-                    </ul>
-                    <p class="text-center text-muted pb-10">© 2021 Company, Inc</p>
-                  </footer>
-                </div>
-              </div>
-            </div>
-
-          </div>
+    <div class="container-fluid" id="footer1" style="display: none;">
+      <div class="row">
+        <div class="col text-center">
+          <footer class="py-3">
+            <ul class="nav justify-content-center mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-muted mb-0">© 2021 Company, Inc</p>
+          </footer>
         </div>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 
 
@@ -209,7 +214,7 @@ body {
     var names = [
       "Mariella Shoulder Bag",
       "Mini Clarence Sling Bag",
-      "Mariella 2-Tone Shoulder Bag",
+      "Mariella 2 ",
       "dc. Signature Tote Bag"]
     var pics = [
       "pictures-dc/mariella-s1.png",
@@ -222,7 +227,6 @@ body {
       "pictures-dc/clar-2.png",
       "pictures-dc/mariella2-s2.png",
       "pictures-dc/dc-tote-2.png"
-
     ]
 
     var prices = [
